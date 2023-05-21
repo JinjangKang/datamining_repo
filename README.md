@@ -79,7 +79,7 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > + Feature Importance가 높은 LQ_3EQL, LQ_1EQL를 분석(LQ_4EQL는 분석할 세부 Feature 부족)
 > <br>
 
-### GradientBoosting - LQ_3EQL(일상생활)
+### LQ_3EQL(일상생활)
 > 1. 변수 설정 및 Encoding, Scaling
 > >	+ 독립변수 - 일상생활 관련 변수
 > >	1. BP16_1: 주중 하루 평균 수면시간
@@ -88,9 +88,12 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > >	4. LS_1YR: 최근 1년 동안 2주 이상 식이보충제 복용 여부
 > >	5. BD1_11: 1년간 음주빈도
 > >	6. BS3_1: 현재 일반담배 흡연 여부
-> <img width="520" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/3355a29b-365b-48f4-a3ff-05023dd32c0f">
+> 
+> <img width="721" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/eeb3c9df-49b1-4df8-943f-c02f0a75153d"><br>
 > 2. 모델링
+> + GradientBoosting
 > <img width="868" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/1a803aad-eace-4d87-838a-cc6f8d34dbb3">
+> + RandomForest
 > <img width="854" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/61216f1d-4fc1-4f85-9936-ebbc0c220e2d">
 > 3. 분석결과
 > + LQ_3EQL(일상활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악 
@@ -106,8 +109,8 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > >	3. BE8_1: 평소 하루 앉아서 보내는 시간
 > >	4. BE5_1: 1주일 간 근력운동 일수
 > >	5. pa_aerobic: 유산소 신체활동 실천율
-> >	6. HE_obe: 비만 유병여부
-> <img width="524" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/9741be39-b9ec-4772-b1e7-a9e0dfeff093">
+> >	6. HE_obe: 비만 유병여부<br>
+> <img width="524" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/9741be39-b9ec-4772-b1e7-a9e0dfeff093"><br>
 > 2. 모델링
 > <img width="857" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/8e958d32-7e0c-4b31-b07a-2a3d14383d0d">
 <img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3">
