@@ -113,7 +113,7 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 <img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3">
 > 3. 분석결과
 > + LQ_1EQL(신체활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악
-> ![image](https://github.com/JinjangKang/datamining_repo/assets/117068666/850ba08b-06dc-4369-85ad-c28d88ae770e)
+> <img width="796" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/82343d1c-7953-4d28-8321-b3f7b6543ce9">
 > + BE8_1(평소 하루 앉아서 보내는 시간)과 BE3_31(1주일 간 걷기 일수)이 가장 많은 영향을 준다.
 
 ## 분석결과
