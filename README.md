@@ -75,9 +75,9 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 
 ### EQ5D 요인들과 주관적 건강인지
 > <img width="632" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/099dec0c-765f-4056-98ce-505db7249106">
-> <img width="455" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/6834830b-f908-4edb-aae5-e99d3e28a5c2"> <br>
+> <img width="455" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/6834830b-f908-4edb-aae5-e99d3e28a5c2">
+> 
 > + Feature Importance가 높은 LQ_3EQL, LQ_1EQL를 분석(LQ_4EQL는 분석할 세부 Feature 부족)
-> <br>
 
 ### LQ_3EQL(일상생활)
 > 1. 변수 설정 및 Encoding, Scaling
@@ -92,10 +92,13 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > <img width="721" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/eeb3c9df-49b1-4df8-943f-c02f0a75153d"><br>
 > 2. 모델링
 > + GradientBoosting
-> <img width="868" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/1a803aad-eace-4d87-838a-cc6f8d34dbb3"><br>
+> 
+> <img width="868" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/1a803aad-eace-4d87-838a-cc6f8d34dbb3">
 > 
 > + RandomForest
-> <img width="854" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/61216f1d-4fc1-4f85-9936-ebbc0c220e2d"><br>
+> 
+> <img width="854" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/61216f1d-4fc1-4f85-9936-ebbc0c220e2d">
+> 
 > 3. 분석결과
 > + LQ_3EQL(일상활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악 
 > <img width="634" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/59d858d7-3db1-46a5-aa29-8b57dca3189b">
@@ -113,17 +116,22 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > >	3. BE8_1: 평소 하루 앉아서 보내는 시간
 > >	4. BE5_1: 1주일 간 근력운동 일수
 > >	5. pa_aerobic: 유산소 신체활동 실천율
-> >	6. HE_obe: 비만 유병여부<br>
-> <img width="779" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/4b51861f-5b67-4e80-97e4-ccfd743d2664"><br>
+> >	6. HE_obe: 비만 유병여부
+> 
+> <img width="779" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/4b51861f-5b67-4e80-97e4-ccfd743d2664">
+> 
 > 2. 모델링
 > + GradientBoosting
-> <img width="857" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/8e958d32-7e0c-4b31-b07a-2a3d14383d0d"><br>
+> <img width="857" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/8e958d32-7e0c-4b31-b07a-2a3d14383d0d">
+> 
 > + RandomForest
-> <img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3"><br>
+> <img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3">
+> 
 > 3. 분석결과
 > + LQ_1EQL(신체활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악
 > <img width="614" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/f8c670c4-1cef-48ae-9e5a-18693b4dcc1e">
 > <img width="1233" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/3d319144-dc86-4983-ae1c-528206d5229b">
+> 
 > + BE8_1(평소 하루 앉아서 보내는 시간)과 BE3_31(1주일 간 걷기 일수)이 가장 많은 영향을 준다.
 
 ## 분석결과
@@ -131,11 +139,11 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 #### 흡연과 음주가 생각보다 매우 큰 영향력을 가지지 않으며, 근력운동보다 걷기운동이 건강에 더 큰 영향을 미친다.
 
 ## 한계점 및 추후 개선방안
-> + 중요 요소의 자세한 값 파악 불가(ex) 수면시간, 앉아있는 시간)<br>
-> + LQ-4EQL 요소 파악 불가<br>
-> + EQ-5D 지표 사용 불가<br>
+> + 중요 요소의 자세한 값 파악 불가(ex) 앉아있는 시간 등)
+> + LQ-4EQL 요소 파악 불가
+> + EQ-5D 지표 사용 불가
 > + 데이터에 미응답과 결측치가 많음
-> + 향후 2019, 2021년도 데이터를 추가 분석한다면 더 면밀한 분석 가능 예상
+> + 향후 2019, 2021년도 데이터와 함께 분석한다면 더 통찰력있는 분석 가능 예상
 
 ## Reference
 > + KOSIS 국가통계포털(질병관리청, 국가건강영양조사, 주관적 건강인지률 추이)
