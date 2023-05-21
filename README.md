@@ -75,7 +75,7 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 
 ### EQ5D 요인들과 주관적 건강인지
 > <img width="632" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/099dec0c-765f-4056-98ce-505db7249106">
-> <img width="455" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/6834830b-f908-4edb-aae5-e99d3e28a5c2">
+> <img width="455" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/6834830b-f908-4edb-aae5-e99d3e28a5c2"> <br>
 > + Feature Importance가 높은 LQ_3EQL, LQ_1EQL를 분석(LQ_4EQL는 분석할 세부 Feature 부족)
 > <br>
 
@@ -92,16 +92,20 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > <img width="721" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/eeb3c9df-49b1-4df8-943f-c02f0a75153d"><br>
 > 2. 모델링
 > + GradientBoosting
-> <img width="868" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/1a803aad-eace-4d87-838a-cc6f8d34dbb3">
+> <img width="868" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/1a803aad-eace-4d87-838a-cc6f8d34dbb3"><br>
+> 
 > + RandomForest
-> <img width="854" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/61216f1d-4fc1-4f85-9936-ebbc0c220e2d">
+> <img width="854" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/61216f1d-4fc1-4f85-9936-ebbc0c220e2d"><br>
 > 3. 분석결과
 > + LQ_3EQL(일상활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악 
-> <img width="787" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/7851a516-6d38-4163-90e0-c2b3c7f7fdbc">
+> <img width="634" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/59d858d7-3db1-46a5-aa29-8b57dca3189b">
+> <img width="1159" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/ba718789-f67c-4be4-b355-8acf6db3d9f4">
+
+
 > + E_NWT(근거리 작업 시간)과 BP16_1(주중 하루 평균 수면시간)이 가장 많은 영향을 준다.
 > <br>
 
-### GradientBoosting - LQ_1EQL(운동능력)
+### LQ_1EQL(운동능력)
 > 1. 변수 설정 및 Encoding, Scaling
 > >	+ 독립변수 - 운동능력 관련 변수
 > >	1. BE3_31: 1주일 간 걷기 일수
@@ -110,13 +114,16 @@ data['y_class'] = data['y_new'].apply(classification, threshold=8)
 > >	4. BE5_1: 1주일 간 근력운동 일수
 > >	5. pa_aerobic: 유산소 신체활동 실천율
 > >	6. HE_obe: 비만 유병여부<br>
-> <img width="524" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/9741be39-b9ec-4772-b1e7-a9e0dfeff093"><br>
+> <img width="779" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/4b51861f-5b67-4e80-97e4-ccfd743d2664"><br>
 > 2. 모델링
-> <img width="857" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/8e958d32-7e0c-4b31-b07a-2a3d14383d0d">
-<img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3">
+> + GradientBoosting
+> <img width="857" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/8e958d32-7e0c-4b31-b07a-2a3d14383d0d"><br>
+> + RandomForest
+> <img width="800" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/746a8505-0fef-4c2e-aa39-11ed6ad80bc3"><br>
 > 3. 분석결과
 > + LQ_1EQL(신체활동 관련 삶의 질)에 가장 많이 영향을 미치는 요인 파악
-> <img width="796" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/82343d1c-7953-4d28-8321-b3f7b6543ce9">
+> <img width="614" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/f8c670c4-1cef-48ae-9e5a-18693b4dcc1e">
+> <img width="1233" alt="image" src="https://github.com/JinjangKang/datamining_repo/assets/117068666/3d319144-dc86-4983-ae1c-528206d5229b">
 > + BE8_1(평소 하루 앉아서 보내는 시간)과 BE3_31(1주일 간 걷기 일수)이 가장 많은 영향을 준다.
 
 ## 분석결과
